@@ -33,13 +33,22 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets" 
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/bootstrap-icons.css",
+              "src/assets/css/templatemo-topic-listing.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/jquery.sticky.js",
+              "src/assets/js/click-scroll.js",
+              "src/assets/js/custom.js"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -107,5 +116,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5660369a-81cf-4cab-b208-97e2a9e507a8"
   }
 }
